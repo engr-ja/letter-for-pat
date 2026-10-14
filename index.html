@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff3f2">
+  <title>A Letter for You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main>
+    <section id="cover" class="screen cover-screen" aria-label="Opening envelope">
+      <div class="eyebrow">Sorry Letter for Pat</div>
+      <div class="cover-flower" aria-hidden="true">✿</div>
+      <h1>Sorry for hurting<br><em>your feelings.</em></h1>
+      <p class="cover-subtitle">Effort to ah, buti nlng engr ako.</p>
+      <button id="openButton" class="envelope-button" aria-label="Open your letter">
+        <span class="envelope">
+          <span class="envelope-paper"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart">♥</span>
+        </span>
+        <span class="open-label">Open your letter <span aria-hidden="true">♡</span></span>
+      </button>
+      <p class="tap-note">Tap the envelope when you're ready</p>
+    </section>
+
+    <section id="letterScreen" class="screen letter-screen hidden" aria-label="Your letter">
+      <div class="top-note">Sorry PAT <span>♡</span></div>
+      <article class="letter-paper">
+        <div class="paper-heart" aria-hidden="true">♡</div>
+        <p class="salutation" id="salutation">Hi Pat,</p>
+        <div id="letterText" class="letter-copy">
+          <p>I'm so sorry, I never meant to hurt your feelings...</p>
+          <p>Sorry po kung sumobra na sa biro, para kasing naging inside joke na natin yung ikaw lagi nauuna mag-aya sa gastos. Sorry kung nasasaktan kana pala.</p>
+          <p>I never regret na we crossed path, kung hindi dahil sayo baka nabulok nlng ako sa kama ko, sometimes it's good to experience things din naman. Basta not too much din at as long as pasok sa budget, hindi naman ako against sa pagcollect ng memories as long as within means.</p>
+          <p>Thank you kasi sinabi mo yung totoo na nasaktan ka, kundi baka FO na tayo nyan (or baka FO na nga?). Sorry na, pagluto nlng kita madami adobo at pagtimpla ng masarap na iced coffee. Hope you forgive me po, sana bati na tayo </p>
+          <p class="closing">I'm so sorry,<br><span id="signature"> Jade ♡ </p>
+        </div>
+      </article>
+
+      <div class="music-card">
+        <div class="music-icon" aria-hidden="true">♫</div>
+        <div class="music-info">
+          <strong id="songTitle">Our little soundtrack</strong>
+          <span id="musicStatus">A song to go with these words</span>
+        </div>
+        <button id="playButton" class="play-button" aria-label="Play music">▶</button>
+        <audio id="audio" preload="metadata">
+          <source src="your-song.mp3" type="audio/mpeg">
+        </audio>
+        <div class="progress-row">
+          <span id="currentTime">0:00</span>
+          <input id="progress" type="range" min="0" max="100" value="0" aria-label="Music progress">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <p class="footer-note">Take your time. There's no rush. <span>♡</span></p>
+    </section>
+
+    <section id="endingScreen" class="screen ending-screen hidden" aria-label="Closing message">
+      <div class="ending-stars" aria-hidden="true">✦　✧　♡　✧</div>
+      <div class="rose" aria-hidden="true">🌹</div>
+      <p class="eyebrow">ONE LAST THING</p>
+      <h2>This letter is just<br><em>the beginning...</em></h2>
+      <p class="ending-copy">I hope these words stay with you for a little while, just as the thought of you stays with me.</p>
+      <button id="readAgain" class="pill-button">Read it again ♡</button>
+      <p class="footer-note">Made especially for you.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
